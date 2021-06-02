@@ -1,0 +1,52 @@
+body{
+  margin: 0;
+}
+.space {
+  width: 100%;
+}
+.h-500 {
+  height: 100vh;
+  background: yellow;
+}
+.h-1000 {
+  height: 100vh;
+}
+
+.box, 
+.img {
+	width:50%;
+	height:90vh;
+	position:absolute;
+	background-size:100%;
+	background-repeat: no-repeat;
+  z-index:2;
+}
+
+.box {
+	left:0px;
+	background-image: url(cloud.png);
+}
+
+.img {
+	right:0px;	
+	background-image: url(Discovering\ New\ Brands.png);
+}
+
+.conentScroll {
+	max-width: 50%;
+	background-color:#fff;
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+}
+
+p {
+	max-width: 250px;
+	text-align:center;
+}
+
+@media only screen and (max-width: 600px) {
+  .box,.img {
+    height: 100vw;
+  }
+}
